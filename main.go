@@ -1,7 +1,11 @@
 package main
 
-import "task/cmd"
+import (
+	"fmt"
+	"task/cmd"
+)
 
 func main() {
+	fmt.Println("start")
 	cmd.Execute()
 }
