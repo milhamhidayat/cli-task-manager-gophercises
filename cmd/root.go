@@ -9,8 +9,8 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "task",
-	Short: "task manager",
-	Long:  `task manager in golang`,
+	Short: "Task manager",
+	Long:  `Task manager in golang`,
 }
 
 func Execute() {

@@ -9,8 +9,8 @@ import (
 // addCmd represents the add command
 var addCmd = &cobra.Command{
 	Use:   "add",
-	Short: "add task",
-	Long:  `add task in golang`,
+	Short: "Add task",
+	Long:  `Add task in golang`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("add called")
 	},
@@ -18,5 +18,4 @@ var addCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(addCmd)
-
 }
