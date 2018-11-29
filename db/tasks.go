@@ -78,9 +78,9 @@ func GetAllTask() ([]Task, error) {
 	return tasks, nil
 }
 
-func DeleteTask(key int) error {
+func DeleteTask(index int) error {
 	return db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket(taskBucket)
-		return b.Delete(itob(key))
+		return b.Delete(itob(index))
 	})
 }
