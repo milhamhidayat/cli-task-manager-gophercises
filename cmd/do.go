@@ -11,7 +11,7 @@ import (
 // doCmd represents the do command
 var doCmd = &cobra.Command{
 	Use:   "do",
-	Short: "A brief description of your command",
+	Short: "Complete a task",
 	Run: func(cmd *cobra.Command, args []string) {
 		ids := []int{}
 		for _, arg := range args {
